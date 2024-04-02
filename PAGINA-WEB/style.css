@@ -321,6 +321,27 @@ footer {
   margin-top: 100px;
 }
 
+.menu-footer ul {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  font-size: 1em;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5em;
+}
+
+ 
+  li:hover {
+  scale: 1.1;
+  background-color: #f7f7f75f;
+  border-radius: 10px;
+  
+}
+
+
 .menu-footer {
   width: 100%;
   display: flex;
@@ -336,12 +357,14 @@ footer {
 #redes-sociales a img {
   padding: 1px;
   border: 1px;
+  width: 45px;
 }
 #redes-sociales a img:hover {
     scale: 1.1;
     
 }
 #redes-sociales {
+  width: 200px;
   background-color: rgba(0, 0, 0, 0);
   /*width: 20%;*/
   display: grid;
