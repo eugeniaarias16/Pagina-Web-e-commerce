@@ -160,7 +160,7 @@ body::-webkit-scrollbar-thumb:hover {
 .horizontalmenu {
   background-color: rgba(0, 0, 0, 0);
   width: 80%;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 0;
   list-style: none;
   display: flex;
@@ -1280,7 +1280,7 @@ select {
   }
   
   .promotion h2 {
-    font-size: 2em;
+    font-size: 1em;
   }
   .main-container,  #woman {
     inset: 0;
