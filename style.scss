@@ -127,8 +127,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 nav .dropdown {
-	display: none;
-
 	button {
 		height: 70px;
 		background-color: rgba(8, 8, 8, 0);
@@ -673,16 +671,53 @@ footer {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url(extras/jordanbanner3.jpg);
+		
 }
 
 .capsule {
 	display: flex;
 	padding-right: 60px;
-	.filters {
+	.filterbutton {
+		padding: 15px;
+		height: max-content;
+		display: flex;
+		gap: 5px;
+		button {
+			width: 70%;
+			height: max-content;
+			padding: 5px;
+			border-radius: 10px;
+			background-color: #c0da63d8;
+			border: solid 2px #556420;
+			max-font-size: 24px;
+			font-family: $font1;
+			color: #556420;
+			text-shadow: 0 0px 2px rgba(0, 0, 0, 0.308);
+			box-shadow: 0 0 5px #131313;
+			&:hover {
+				scale: .9;
+				background-color: #d9f089d8;
+			}
+		}
+	}
+	.filtermenu {
+		width: 100%;
+		height: 60px;
+		padding: 5px;
+		#orderbutton {
+			display: flex;
+			justify-content: end;
+			width: 70%;
+			
+		}
+		
+		
+	}
+	.filters, #collapse-filter{
 		padding-top: 50px;
 		position: relative;
-		max-width: 25%;
-		min-width: 30%;
+		max-width: 50%;
+		width: 25%;
 		height: 100;
 		background-image: linear-gradient(to right, #5e5e5e, #787878, #939393, #aeaeae, #cbcbcb);
 		// background-color: #acadac;
@@ -760,39 +795,46 @@ footer {
 			display: flex;
 			flex-wrap: wrap;
 			.check {
-				max-width: 80px;
+				max-width: 100px;
 				margin: 10px ;
+				width: 80px;
 			}
 		}
 		#colors {
 			inset: 0;
 			margin: auto;
 			min-width: 80%;
-			display: flex;
-			flex-wrap: wrap;
-			gap: 10px;
+			width: 80%;
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			justify-content: center;
 			.form-check{
-				padding: 0;
+				padding: 10px;
 				min-width: 70px;
-				float: center;
+				height: 80px;
 				text-align: center;
+				
+				
+				
 				label {
 					width: 100%;
 					font-size: 20px;
 					font-family: $font2;
 				}
 				.form-check-input {
-					
-					max-width: 50px;
-					max-height: 50px;
+				
+					float:right;
+					max-width: 60px;
+					max-height: 60px;
+					height: 40px;
+					width: 40px;
 					border-radius: 50%;
 					border: solid 3px #dbdada;
 					box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
-					float: right;
-					margin-left: 0;
+					
+					
 				}
 			}
-			
 		}
 		#price-range {
 			width: 100%;
@@ -846,6 +888,15 @@ footer {
 			
 		}
 	}
+	.filtermenu{
+		display: none;
+		#collapse-filter {
+			max-width: 100%;
+			width: 100%;
+			padding-bottom: 200px;
+			
+		}
+	}
 	
 
 	.main-capsule {
@@ -859,7 +910,8 @@ footer {
 
 		.capsule-cards {
 			// display: flex;
-			max-width: 30%;
+			max-width: 100%;
+			width: 30%;
 			height: max-content;
 			background-color: #b49e9e00;
 			box-shadow: 0 0 15px #6c6e65;
@@ -1249,9 +1301,6 @@ footer {
 		margin-bottom: 20px;
 		color: #313131;
 	}
-}
-
-.client-main {
 	form {
 		margin: 10px;
 		padding: 50px;
@@ -1279,7 +1328,7 @@ i {
 }
 
 .form-check input {
-	height: 20px;
+	// height: 20px;
 	border-color: #313131af;
 }
 
@@ -1313,6 +1362,7 @@ i {
 		font-size: 30px;
 	}
 }
+
 
 /*style ABOUT-US.HTML*/
 
@@ -2010,7 +2060,7 @@ i:hover {
 		.main-capsule{
 			margin-left: 10px;
 			.capsule-cards {
-				max-width: 40%;
+				width: 40%;
 			}
 		}
 			.filters {
@@ -2055,17 +2105,10 @@ i:hover {
 				}
 			}
 			#colors {
-				.form-check{
-					margin: 10px;
-					width: 40%;
-					display: flex;
-					
-					.form-check-input {
-						width: 30px;
-						height: 30px;
-					}
+				.form-check-input {
+					width: 30px;
+					height: 30px;
 				}
-				
 			}
 			#price-range {
 				.slider  {
@@ -2304,11 +2347,19 @@ i:hover {
 		}
 	}
 	.capsule {
+		
 		padding-right: 20px;
+		.filters {
+			width: 35%;
+			#colors {
+				grid-template-columns: repeat(2,1fr);
+			}
+		}
 		.main-capsule{
 			margin-left: 10px;
+			gap: 15px;
 			.capsule-cards {
-				max-width: 40%;
+				width: 40%;
 				h4 {
 					font-size: 20px;
 				}
@@ -2553,6 +2604,72 @@ i:hover {
 			}
 		}
 	}
+	.capsule {
+		flex-wrap: wrap;
+		.filtermenu {
+			margin: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			#orderbutton {
+				width: 90px;
+			}
+			.dropdown {
+				height: 100%;
+				padding: 0;
+				width: 100%;
+			}
+			button {
+				background-color: #11111100;
+				i {
+					font-size: 35px;
+					background-color: #31313100;
+					color: #ee0909;
+					text-shadow: 0 0 5px rgba(255, 255, 255, 0.486);
+					transition: 0.2s ease-in;
+				}
+				&:hover {
+					scale: .9;
+				}
+			}
+			
+			.filterbutton{
+				width: 100%;
+				button {
+					
+					width: 70%;
+					height: max-content;
+					padding: 5px;
+					border-radius: 10px;
+					background-color: #c0da63d8;
+					border: solid 2px #556420;
+					font-size: 22px;
+					font-family: $font1;
+					color: #556420;
+					text-shadow: 0 0px 2px rgba(0, 0, 0, 0.308);
+					box-shadow: 0 0 5px #131313;
+					&:hover {
+						scale: .9;
+						background-color: #d9f089d8;
+					}
+				}
+			}
+			
+		}
+		.filters {
+			display: none;
+		}
+		.main-capsule {
+			margin-left: 0;
+			padding: 0 20px;
+			width: auto;
+			gap: 20px;
+			.capsule-cards {
+				width: 45%;
+			}
+		}
+	}
 }
 
 
@@ -2747,8 +2864,72 @@ i:hover {
 			padding: 15px;
 		}
 	}
-
-
+.capsule-collection {
+	background-size: contain;
+}
+.capsule {
+	flex-wrap: wrap;
+	.filtermenu {
+		margin: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		.dropdown {
+			height: 100%;
+			padding: 0;
+			width: auto;
+		}
+		button {
+			background-color: #11111100;
+			i {
+				font-size: 35px;
+				background-color: #31313100;
+				color: #ee0909;
+				text-shadow: 0 0 5px rgba(255, 255, 255, 0.486);
+				transition: 0.2s ease-in;
+			}
+			&:hover {
+				scale: .9;
+			}
+		}
+		
+		.filterbutton{
+			width: 100%;
+			button {
+				
+				width: 70%;
+				height: max-content;
+				padding: 5px;
+				border-radius: 10px;
+				background-color: #c0da63d8;
+				border: solid 2px #556420;
+				font-size: 22px;
+				font-family: $font1;
+				color: #556420;
+				text-shadow: 0 0px 2px rgba(0, 0, 0, 0.308);
+				box-shadow: 0 0 5px #131313;
+				&:hover {
+					scale: .9;
+					background-color: #d9f089d8;
+				}
+			}
+		}
+		
+	}
+	.filters {
+		display: none;
+	}
+	.main-capsule {
+		margin-left: 0;
+		padding: 0 20px;
+		width: auto;
+		gap: 20px;
+		.capsule-cards {
+			width: 45%;
+		}
+	}
+}
 
 
 }
@@ -2847,6 +3028,16 @@ i:hover {
 
 		#contact-us {
 			display: inline-block;
+		}
+	}
+	.filtermenu button {
+		i {
+			font-size: 24px !important;
+		}
+	}
+	.main-capsule {
+		.capsule-cards {
+			width: 250px !important; 
 		}
 	}
 }

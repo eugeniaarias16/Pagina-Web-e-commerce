@@ -114,9 +114,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: none;
 }
 
-nav .dropdown {
-  display: none;
-}
 nav .dropdown button {
   height: 70px;
   background-color: rgba(8, 8, 8, 0);
@@ -641,28 +638,61 @@ footer {
   display: flex;
   padding-right: 60px;
 }
-.capsule .filters {
+.capsule .filterbutton {
+  padding: 15px;
+  height: max-content;
+  display: flex;
+  gap: 5px;
+}
+.capsule .filterbutton button {
+  width: 70%;
+  height: max-content;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(192, 218, 99, 0.8470588235);
+  border: solid 2px #556420;
+  max-font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+  color: #556420;
+  text-shadow: 0 0px 2px rgba(0, 0, 0, 0.308);
+  box-shadow: 0 0 5px #131313;
+}
+.capsule .filterbutton button:hover {
+  scale: 0.9;
+  background-color: rgba(217, 240, 137, 0.8470588235);
+}
+.capsule .filtermenu {
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+}
+.capsule .filtermenu #orderbutton {
+  display: flex;
+  justify-content: end;
+  width: 70%;
+}
+.capsule .filters, .capsule #collapse-filter {
   padding-top: 50px;
   position: relative;
-  max-width: 25%;
-  min-width: 30%;
+  max-width: 50%;
+  width: 25%;
   height: 100;
   background-image: linear-gradient(to right, #5e5e5e, #787878, #939393, #aeaeae, #cbcbcb);
   box-shadow: 0 0 15px #6c6e65;
 }
-.capsule .filters section {
+.capsule .filters section, .capsule #collapse-filter section {
   margin: 30px 0px;
 }
-.capsule .filters #img-logo {
+.capsule .filters #img-logo, .capsule #collapse-filter #img-logo {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.capsule .filters #img-logo img {
+.capsule .filters #img-logo img, .capsule #collapse-filter #img-logo img {
   width: 150px;
   background-color: rgba(17, 17, 17, 0);
 }
-.capsule .filters h3 {
+.capsule .filters h3, .capsule #collapse-filter h3 {
   margin: 20px 0;
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
@@ -670,14 +700,14 @@ footer {
   font-size: 60px;
   text-shadow: 0 0 5px #ee0909;
 }
-.capsule .filters h4 {
+.capsule .filters h4, .capsule #collapse-filter h4 {
   text-align: center;
   font-family: "Bebas Neue", sans-serif;
   font-size: 40px;
   font-weight: 200;
   margin: 20px 0;
 }
-.capsule .filters h5 {
+.capsule .filters h5, .capsule #collapse-filter h5 {
   width: 100%;
   text-align: center;
   font-family: "Cairo", sans-serif;
@@ -688,74 +718,77 @@ footer {
   background-color: rgba(247, 247, 247, 0.3725490196);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
 }
-.capsule .filters input {
+.capsule .filters input, .capsule #collapse-filter input {
   margin-right: 10px;
 }
-.capsule .filters label {
+.capsule .filters label, .capsule #collapse-filter label {
   font-size: 28px;
   font-family: "Cairo", sans-serif;
   font-weight: 400;
 }
-.capsule .filters .dropdown-menu {
+.capsule .filters .dropdown-menu, .capsule #collapse-filter .dropdown-menu {
   width: 30%;
 }
-.capsule .filters #style {
+.capsule .filters #style, .capsule #collapse-filter #style {
   inset: 0;
   margin: auto;
   width: 80%;
   display: flex;
   flex-direction: column;
 }
-.capsule .filters #style .check {
+.capsule .filters #style .check, .capsule #collapse-filter #style .check {
   height: 50px;
 }
-.capsule .filters #size {
+.capsule .filters #size, .capsule #collapse-filter #size {
   inset: 0;
   margin: auto;
   min-width: 80%;
   display: flex;
   flex-wrap: wrap;
 }
-.capsule .filters #size .check {
-  max-width: 80px;
+.capsule .filters #size .check, .capsule #collapse-filter #size .check {
+  max-width: 100px;
   margin: 10px;
+  width: 80px;
 }
-.capsule .filters #colors {
+.capsule .filters #colors, .capsule #collapse-filter #colors {
   inset: 0;
   margin: auto;
   min-width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
 }
-.capsule .filters #colors .form-check {
-  padding: 0;
+.capsule .filters #colors .form-check, .capsule #collapse-filter #colors .form-check {
+  padding: 10px;
   min-width: 70px;
-  float: center;
+  height: 80px;
   text-align: center;
 }
-.capsule .filters #colors .form-check label {
+.capsule .filters #colors .form-check label, .capsule #collapse-filter #colors .form-check label {
   width: 100%;
   font-size: 20px;
   font-family: "Cairo", sans-serif;
 }
-.capsule .filters #colors .form-check .form-check-input {
-  max-width: 50px;
-  max-height: 50px;
+.capsule .filters #colors .form-check .form-check-input, .capsule #collapse-filter #colors .form-check .form-check-input {
+  float: right;
+  max-width: 60px;
+  max-height: 60px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   border: solid 3px #dbdada;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
-  float: right;
-  margin-left: 0;
 }
-.capsule .filters #price-range {
+.capsule .filters #price-range, .capsule #collapse-filter #price-range {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.capsule .filters #price-range .field {
+.capsule .filters #price-range .field, .capsule #collapse-filter #price-range .field {
   display: flex;
   gap: 5px;
   width: 90%;
@@ -765,7 +798,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.capsule .filters #price-range .field span {
+.capsule .filters #price-range .field span, .capsule #collapse-filter #price-range .field span {
   box-sizing: border-box;
   min-width: 45%;
   padding: 5px;
@@ -778,25 +811,33 @@ footer {
   display: flex;
   align-items: center;
 }
-.capsule .filters #price-range .field span .min-input {
+.capsule .filters #price-range .field span .min-input, .capsule #collapse-filter #price-range .field span .min-input {
   margin-right: 0;
   margin-left: 10px;
 }
-.capsule .filters #price-range .field input {
+.capsule .filters #price-range .field input, .capsule #collapse-filter #price-range .field input {
   height: 40px;
   width: 100%;
   border-radius: 10px;
   text-align: center;
   color: rgba(72, 87, 21, 0.631372549);
 }
-.capsule .filters #price-range .slider {
+.capsule .filters #price-range .slider, .capsule #collapse-filter #price-range .slider {
   width: 90%;
   display: flex;
   justify-content: center;
 }
-.capsule .filters #price-range .slider input {
+.capsule .filters #price-range .slider input, .capsule #collapse-filter #price-range .slider input {
   box-sizing: border-box;
   width: 50%;
+}
+.capsule .filtermenu {
+  display: none;
+}
+.capsule .filtermenu #collapse-filter {
+  max-width: 100%;
+  width: 100%;
+  padding-bottom: 200px;
 }
 .capsule .main-capsule {
   margin-left: 20px;
@@ -808,7 +849,8 @@ footer {
   gap: 25px;
 }
 .capsule .main-capsule .capsule-cards {
-  max-width: 30%;
+  max-width: 100%;
+  width: 30%;
   height: max-content;
   background-color: rgba(180, 158, 158, 0);
   box-shadow: 0 0 15px #6c6e65;
@@ -1150,7 +1192,6 @@ footer {
   margin-bottom: 20px;
   color: #313131;
 }
-
 .client-main form {
   margin: 10px;
   padding: 50px;
@@ -1176,7 +1217,6 @@ i {
 }
 
 .form-check input {
-  height: 20px;
   border-color: rgba(49, 49, 49, 0.6862745098);
 }
 
@@ -1750,7 +1790,7 @@ i:hover {
     margin-left: 10px;
   }
   .capsule .main-capsule .capsule-cards {
-    max-width: 40%;
+    width: 40%;
   }
   .capsule .filters #img-logo img {
     width: 100px;
@@ -1785,12 +1825,7 @@ i:hover {
   .capsule #size .check {
     width: 40%;
   }
-  .capsule #colors .form-check {
-    margin: 10px;
-    width: 40%;
-    display: flex;
-  }
-  .capsule #colors .form-check .form-check-input {
+  .capsule #colors .form-check-input {
     width: 30px;
     height: 30px;
   }
@@ -1974,11 +2009,18 @@ i:hover {
   .capsule {
     padding-right: 20px;
   }
+  .capsule .filters {
+    width: 35%;
+  }
+  .capsule .filters #colors {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .capsule .main-capsule {
     margin-left: 10px;
+    gap: 15px;
   }
   .capsule .main-capsule .capsule-cards {
-    max-width: 40%;
+    width: 40%;
   }
   .capsule .main-capsule .capsule-cards h4 {
     font-size: 20px;
@@ -2163,6 +2205,69 @@ i:hover {
   .about-us #contact-us .cus p {
     font-size: 14px;
   }
+  .capsule {
+    flex-wrap: wrap;
+  }
+  .capsule .filtermenu {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .capsule .filtermenu #orderbutton {
+    width: 90px;
+  }
+  .capsule .filtermenu .dropdown {
+    height: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  .capsule .filtermenu button {
+    background-color: rgba(17, 17, 17, 0);
+  }
+  .capsule .filtermenu button i {
+    font-size: 35px;
+    background-color: rgba(49, 49, 49, 0);
+    color: #ee0909;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.486);
+    transition: 0.2s ease-in;
+  }
+  .capsule .filtermenu button:hover {
+    scale: 0.9;
+  }
+  .capsule .filtermenu .filterbutton {
+    width: 100%;
+  }
+  .capsule .filtermenu .filterbutton button {
+    width: 70%;
+    height: max-content;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(192, 218, 99, 0.8470588235);
+    border: solid 2px #556420;
+    font-size: 22px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #556420;
+    text-shadow: 0 0px 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 0 5px #131313;
+  }
+  .capsule .filtermenu .filterbutton button:hover {
+    scale: 0.9;
+    background-color: rgba(217, 240, 137, 0.8470588235);
+  }
+  .capsule .filters {
+    display: none;
+  }
+  .capsule .main-capsule {
+    margin-left: 0;
+    padding: 0 20px;
+    width: auto;
+    gap: 20px;
+  }
+  .capsule .main-capsule .capsule-cards {
+    width: 45%;
+  }
 }
 @media only screen and (max-width: 480px) {
   .footmenu {
@@ -2314,6 +2419,69 @@ i:hover {
   .about-us section {
     padding: 15px;
   }
+  .capsule-collection {
+    background-size: contain;
+  }
+  .capsule {
+    flex-wrap: wrap;
+  }
+  .capsule .filtermenu {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .capsule .filtermenu .dropdown {
+    height: 100%;
+    padding: 0;
+    width: auto;
+  }
+  .capsule .filtermenu button {
+    background-color: rgba(17, 17, 17, 0);
+  }
+  .capsule .filtermenu button i {
+    font-size: 35px;
+    background-color: rgba(49, 49, 49, 0);
+    color: #ee0909;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.486);
+    transition: 0.2s ease-in;
+  }
+  .capsule .filtermenu button:hover {
+    scale: 0.9;
+  }
+  .capsule .filtermenu .filterbutton {
+    width: 100%;
+  }
+  .capsule .filtermenu .filterbutton button {
+    width: 70%;
+    height: max-content;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgba(192, 218, 99, 0.8470588235);
+    border: solid 2px #556420;
+    font-size: 22px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #556420;
+    text-shadow: 0 0px 2px rgba(0, 0, 0, 0.308);
+    box-shadow: 0 0 5px #131313;
+  }
+  .capsule .filtermenu .filterbutton button:hover {
+    scale: 0.9;
+    background-color: rgba(217, 240, 137, 0.8470588235);
+  }
+  .capsule .filters {
+    display: none;
+  }
+  .capsule .main-capsule {
+    margin-left: 0;
+    padding: 0 20px;
+    width: auto;
+    gap: 20px;
+  }
+  .capsule .main-capsule .capsule-cards {
+    width: 45%;
+  }
 }
 @media only screen and (max-width: 440px) {
   header {
@@ -2389,6 +2557,12 @@ i:hover {
   }
   .about-us #contact-us {
     display: inline-block;
+  }
+  .filtermenu button i {
+    font-size: 24px !important;
+  }
+  .main-capsule .capsule-cards {
+    width: 250px !important;
   }
 }
 
