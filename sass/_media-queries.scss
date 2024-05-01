@@ -1,0 +1,1672 @@
+@media only screen and (min-width: 300px) and (max-width: 1080px) {
+	#nike-header img {
+		height: 80px;
+	}
+
+	.logo-header1 img {
+		height: 30px;
+	}
+
+	.promotion h2 {
+		font-size: 1.5em;
+	}
+
+	.menu-principal ul {
+		font-size: 1em;
+	}
+
+	.sport {
+		ul {
+			font-size: 20px;
+		}
+	}
+
+	.main-container,
+	#woman {
+		padding: 30px;
+		width: 90%;
+
+	}
+
+	.up {
+		right: 0px;
+	}
+
+	.up img {
+		max-width: 60px;
+	}
+
+	footer {
+		display: inline-block;
+	}
+
+	.menu-footer,
+	#redes-sociales a img {
+		font-size: 0.9em;
+	}
+
+	.menu-footer ul {
+		width: 100%;
+	}
+
+	#redes-sociales {
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+	}
+
+	.product-description {
+		.choose-product {
+			h4 {
+				font-size: 22px;
+			}
+		}
+
+		.product {
+			padding: 5px;
+
+			h1 {
+				font-size: 34px;
+			}
+
+			h2 {
+				font-size: 28px;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.complete-look {
+		gap: 0;
+		display: flex;
+		width: 80vw;
+		height: 300px;
+		object-fit: contain;
+
+		.card-complete-look {
+			object-fit: cover;
+			width: 25%;
+			height: 300px;
+			overflow: hidden;
+
+			&:hover {
+				// width: 300px;
+				scale: 1.2;
+				overflow: visible;
+				z-index: 2;
+
+			}
+
+			img {
+				width: 300px;
+				flex-grow: 1;
+				transition: 0.5s ease;
+				object-fit: fill;
+			}
+		}
+	}
+
+	.about-us {
+		section {
+			padding: 70px;
+		}
+
+		#devolutions {
+			.accordion-header {
+				margin: 20px;
+				padding: 10px;
+			}
+
+			#contact-us {
+				padding: 40px;
+				grid-template-rows: 100px repeat(2, 200px);
+
+				.cus {
+					width: 100%;
+					padding: 10px;
+					margin: 30px;
+					height: auto;
+
+					a,
+					i {
+						font-size: 28px;
+					}
+
+					// p {
+					// 	font-size: 18px;
+					// }
+
+				}
+
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1200px) {
+	.capsule {
+		.filters {
+			#img-logo img {
+				width: 120px;
+				background-color: #11111100;
+			}
+
+			h3 {
+				margin: 20px 0;
+				text-align: center;
+				font-family: $font1;
+				font-weight: 600;
+				font-size: 50px;
+				text-shadow: 0 0 5px #ee0909;
+
+			}
+
+			h4 {
+				font-size: 36px;
+			}
+
+			h5 {
+				font-size: 30px;
+				font-weight: 400;
+			}
+
+			input {
+				margin-right: 10px;
+			}
+
+			label {
+				font-size: 22px;
+				font-family: $font2;
+				font-weight: 400;
+			}
+		}
+
+		#price-range {
+			.field {
+				span {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	#nike-header img {
+		height: 90px;
+	}
+
+	.logo-header1 img {
+		height: 30px;
+	}
+
+	.menu-principal ul {
+		font-size: 1em;
+	}
+
+	.promotion h2 {
+		font-size: 1.5em;
+	}
+
+	.main-container {
+		inset: 0;
+		margin: auto;
+		padding: 80px;
+	}
+
+	.menu-footer {
+		font-size: 0.9em;
+	}
+
+	#redes-sociales a img {
+		font-size: 0.9em;
+	}
+
+	.product-description {
+		.choose-product {
+			h4 {
+				font-size: 22px;
+			}
+		}
+
+		.product {
+			h1 {
+				font-size: 34px;
+			}
+
+			h2 {
+				font-size: 28px;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+		}
+
+
+	}
+
+	.home {
+		h2 {
+			font-size: 55px;
+		}
+	}
+
+
+	.about-us {
+		#contact-us {
+			padding: 30px;
+			grid-template-rows: 100px repeat(2, 300px);
+
+			.cus {
+				width: 100%;
+				padding: 10px;
+				margin: 30px;
+				height: auto;
+
+				a,
+				i {
+					font-size: 28px;
+				}
+
+				p {
+					font-size: 18px;
+				}
+
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1080px) {
+	.capsule {
+		.filters {
+			#img-logo img {
+				width: 120px;
+				background-color: #11111100;
+			}
+
+			h3 {
+				margin: 20px 0;
+				text-align: center;
+				font-family: $font1;
+				font-weight: 600;
+				font-size: 45px;
+				text-shadow: 0 0 5px #ee0909;
+
+			}
+
+			h4 {
+				font-size: 35px;
+			}
+
+			h5 {
+				font-size: 30px;
+				font-weight: 400;
+			}
+
+			input {
+				margin-right: 10px;
+			}
+
+			label {
+				font-size: 22px;
+				font-family: $font2;
+				font-weight: 400;
+			}
+		}
+
+		#colors {
+			.form-check-input {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		#price-range {
+			.slider {
+				margin-top: 20px;
+			}
+
+			.field {
+				span {
+					font-size: 18px;
+					width: 70%;
+				}
+
+			}
+		}
+	}
+
+	.home {
+		h2 {
+			font-size: 55px;
+			margin-top: 70px;
+		}
+
+
+	}
+}
+
+@media only screen and (max-width: 900px) {
+
+	.main-container{
+		width: 90vw;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: 0;
+		padding-top: 0;
+	}
+	#woman {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		.colection {
+			width: 45%;
+			height: 500px;
+		}
+		#w5,
+		#w10,
+		#w15,
+		#w20 {
+		display: none;
+	}
+	#yoga,
+	#running,
+	#trainning,
+	#life-style {
+		width: 90%;
+		margin: 100px 0 10px;
+	}
+	}
+	
+
+	// .colection {
+	// 	box-sizing: border-box;
+	// 	width: 45%;
+	// 	height: 300px;
+	// }
+
+	
+
+	.sport {
+		width: 100%;
+		margin-bottom: 0px;
+	}
+
+	.sport ul {
+		font-size: 18px;
+	}
+
+	.product-description {
+		.choose-product {
+			h4 {
+				font-size: 20px;
+			}
+		}
+
+		.product {
+			padding: 5px;
+
+			h1 {
+				font-size: 34px;
+			}
+
+			h2 {
+				font-size: 24px;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+		}
+	}
+
+	.about-us {
+		padding: 30px;
+
+		section {
+			padding: 40px;
+		}
+
+		h2 {
+			font-size: 42px;
+		}
+
+		#work {
+			#submit-cv button {
+				width: 35%;
+				height: 80px;
+				font-size: 24px;
+			}
+		}
+
+		#contact-us {
+			gap: 20px;
+			grid-template-rows: 100px repeat(2, 300px);
+
+			.cus {
+				width: 100%;
+				padding: 10px;
+				margin: 30px;
+				height: max-content;
+
+				a,
+				i {
+					font-size: 22px;
+				}
+
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	.capsule {
+		padding-right: 20px;
+
+		.main-capsule {
+			margin-left: 10px;
+
+			.capsule-cards {
+				width: 40%;
+			}
+		}
+
+		.filters {
+			#img-logo img {
+				width: 100px;
+				background-color: #11111100;
+			}
+
+			h3 {
+				margin: 20px 0;
+				text-align: center;
+				font-family: $font1;
+				font-weight: 500;
+				font-size: 45px;
+				text-shadow: 0 0 5px #ee0909;
+
+			}
+
+			h4 {
+				font-size: 35px;
+			}
+
+			h5 {
+				font-size: 30px;
+				font-weight: 400;
+			}
+
+			input {
+				margin-right: 10px;
+			}
+
+			label {
+				font-size: 22px;
+				font-family: $font2;
+				font-weight: 400;
+			}
+		}
+
+		#size {
+			width: 90%;
+
+			.check {
+				width: 40%;
+			}
+		}
+
+		#colors {
+			.form-check-input {
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		#price-range {
+			.slider {
+				margin-top: 20px;
+			}
+
+			.field {
+				span {
+					font-size: 18px;
+					width: 70%;
+				}
+			}
+		}
+	}
+
+	.home {
+		h2 {
+			font-size: 50px;
+			margin-top: 70px;
+		}
+
+		.idols-section {
+			#carouselExampleAutoplaying {
+				.carousel-inner {
+					.carousel-item {
+						height: auto;
+					}
+				}
+			}
+		}
+
+		.home-section {
+			.carruselhome {
+				.homecards {
+					width: 40vw;
+
+					button {
+						font-size: 35px;
+					}
+				}
+			}
+
+		}
+
+		#gender-section {
+			button {
+				font-size: 20px;
+			}
+		}
+	}
+
+
+}
+
+@media only screen and (max-width: 760px) {
+	.colection {
+		width: 90%;
+		height: 80vw;
+	}
+
+	#c6,
+	#c10 {
+		height: 700px;
+	}
+
+	.horizontalmenu {
+		display: none;
+	}
+
+	nav .dropdown {
+		display: block;
+	}
+
+	.menu-principal {
+		justify-content: start;
+	}
+
+	.menu-footer {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		font-size: 0.8em;
+	}
+
+	.sport ul {
+		font-size: 16px;
+		display: flex;
+		width: 80%;
+	}
+
+	#yoga,
+	#running,
+	#trainning,
+	#life-style {
+		font-size: 18px;
+	}
+
+	.keepshopping i {
+		text-align: center;
+		left: 90px;
+	}
+
+	.checkcart i {
+		text-align: center;
+		right: 90px;
+	}
+
+	.product-main {
+		width: 85%;
+		inset: 0;
+		margin: 40px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		justify-items: center;
+
+		.accordion-body {
+			font-size: 16px;
+		}
+
+		.contain {
+			display: flex;
+			justify-content: center;
+			width: 90%;
+			margin: 50px 0;
+
+			.accordion-header {
+				button {
+					font-size: 18px;
+					color: #313131c9;
+					background-color: #7f887d11;
+				}
+
+			}
+		}
+
+		#tabladetalles {
+			width: 100%;
+			height: 100%;
+		}
+
+		.link1 {
+			width: 90%;
+			height: 50px;
+			margin: 20px;
+
+			// justify-content: center;
+			// text-align: center;
+			a {
+				max-width: 200px;
+				position: relative;
+				margin: 0;
+				text-align: center;
+
+				i {
+					text-align: center;
+					line-height: 50px;
+
+				}
+
+				p {
+					display: none;
+				}
+
+				:hover {
+					background-color: #74882c73;
+					box-shadow: #60741b;
+
+					a {
+						p {
+							display: block;
+						}
+
+						i {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+
+		.product1 {
+			display: inline-block;
+			padding: 40px 40px 0;
+			width: 100%;
+
+			h1 {
+				font-size: 2.5em;
+				color: #888787;
+				text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.753);
+			}
+
+			h2 {
+				font-size: 1.5em;
+			}
+
+			h3 {
+				font-size: 1.5em;
+			}
+		}
+
+		.product-description {
+			box-sizing: content-box;
+			display: flex;
+			justify-content: space-around;
+			height: 100px;
+			width: 90%;
+
+			.choose-product {
+				width: 100%;
+				inset: 0;
+				margin: auto;
+
+				#list-sizes {
+					width: 80px;
+					height: 40px;
+				}
+
+				h4 {
+					font-size: 18px;
+				}
+			}
+
+			.product {
+				display: none;
+			}
+
+			.b1 {
+				width: 100%;
+				gap: 20px;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+
+	.about-us {
+		h3 {
+			font-size: 24px;
+		}
+
+		h2 {
+			font-size: 38px;
+
+			#devolutions {
+				.accordion-header {
+					padding: 20px;
+				}
+			}
+
+			#contact-us {
+				padding: 40px;
+				grid-template-rows: 100px repeat(2, 300px);
+
+				.cus {
+					inset: 0;
+					width: 100%;
+					padding: 10px;
+					margin: 30px;
+					height: auto;
+
+					a,
+					i {
+						font-size: 24px;
+					}
+
+					p {
+						font-size: 16px;
+					}
+
+				}
+
+			}
+		}
+	}
+
+	.capsule {
+
+		padding-right: 20px;
+
+		.filters {
+			width: 35%;
+
+			#colors {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+
+		.main-capsule {
+			margin-left: 10px;
+			gap: 15px;
+
+			.capsule-cards {
+				width: 40%;
+
+				h4 {
+					font-size: 20px;
+				}
+
+				h5 {
+					font-size: 20px;
+				}
+
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	.home {
+		#gender-section {
+			height: 100%;
+
+			.gender {
+				width: 100%;
+				height: 80vh;
+			}
+		}
+
+		h2 {
+			font-size: 45px;
+			margin-top: 70px;
+		}
+
+		.home-section {
+
+			.carruselhome {
+				.homecards {
+					button {
+						font-size: 30px;
+					}
+				}
+			}
+
+		}
+
+	}
+}
+
+
+@media only screen and (max-width: 620px) {
+
+	.menu-footer {
+		font-size: 0.7em;
+	}
+
+	#redes-sociales a img {
+		width: 35px;
+	}
+
+	.dropdown-menu {
+		width: 100vw;
+		height: auto;
+	}
+
+	.dropdown button i {
+		font-size: 2em;
+	}
+
+	.sport ul {
+		font-size: 15px;
+		padding: 5px;
+		display: flex;
+		width: 90%;
+	}
+
+	.up img {
+		width: 50px;
+		right: 1px;
+		margin-right: 0px;
+	}
+#woman {
+	.colection {
+	width: 80%;
+	}
+		#yoga,
+		#running,
+		#trainning,
+		#life-style {
+			font-size: 16px;
+		}
+	}
+
+	.keepshopping i {
+		text-align: center;
+		left: 60px;
+	}
+
+	.checkcart i {
+		text-align: center;
+		right: 60px;
+	}
+
+	.product-main {
+		inset: 0;
+		margin: auto;
+		width: 80%;
+
+		.link1 {
+			width: 70%;
+			height: 40px;
+			margin: 20px;
+
+			:hover {
+				background-color: #c4ec33b6;
+				border: 2px solid;
+				border-radius: 5px;
+				border-color: #4052088a;
+				box-shadow: 0 0 5px #6c6e65;
+
+				p {
+					height: 100%;
+					display: inline;
+					font-size: 16px;
+					color: #313131;
+					text-align: center;
+					top: 10px;
+
+
+				}
+
+				i {
+					display: none;
+				}
+			}
+
+			a {
+				height: 100%;
+				max-width: 150px;
+				position: relative;
+				margin: 0;
+				text-align: center;
+				line-height: 35px;
+
+				i {
+					display: inline;
+					text-align: center;
+					line-height: 35px;
+
+				}
+
+				p {
+					display: none;
+				}
+
+			}
+		}
+
+		.carrusel {
+			width: 95%;
+		}
+
+		.product-description {
+			.choose-product {
+				display: inline-block;
+				width: 100%;
+				margin: 10px;
+				position: relative;
+
+				.sizes {
+					position: absolute;
+					width: 100%;
+					height: 60px;
+					display: flex;
+					justify-content: center;
+
+					#list-sizes {
+						height: 40%;
+					}
+				}
+
+				h4 {
+					font-size: 16px;
+					text-align: center;
+				}
+
+			}
+
+			.b1 {
+				width: 100%;
+				gap: 10px;
+
+				// justify-content: center;
+				// align-items: center;
+				.heart {
+					text-align: center;
+					line-height: 80px;
+					padding: 10px;
+				}
+
+				#add-button {
+					width: 100%;
+					padding: 5px;
+					font-size: 16px;
+					gap: 20px;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+	}
+
+	.ch2 {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	.about-us {
+		width: 90%;
+		margin-top: 0px;
+
+		h2 {
+			font-size: 32px;
+		}
+
+		section {
+			padding: 30px;
+		}
+
+		#tracking {
+			.progress {
+				width: 80%;
+			}
+
+			.form-floating {
+				width: 80%;
+				font-size: 16px;
+			}
+		}
+
+		#work {
+			.form-select {
+				font-size: 14px;
+			}
+
+			.job h4 {
+				font-size: 18px;
+				margin: 10px 0;
+			}
+
+			#cv {
+				width: 80%;
+			}
+
+			#submit-cv button {
+				width: 40%;
+				font-size: 18px;
+			}
+		}
+
+		#devolutions {
+			.accordion-header {
+				.accordion-body {
+					font-size: 14px;
+				}
+
+				margin: 10px;
+
+				button {
+					font-size: 16px;
+				}
+			}
+		}
+
+		#contact-us {
+			.cus {
+				margin: 10px;
+
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.capsule {
+		flex-wrap: wrap;
+
+		.filtermenu {
+			margin: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+
+			#orderbutton {
+				width: 90px;
+			}
+
+			.dropdown {
+				height: 100%;
+				padding: 0;
+				width: 100%;
+			}
+
+			button {
+				background-color: #11111100;
+
+				i {
+					font-size: 35px;
+					background-color: #31313100;
+					color: #ee0909;
+					text-shadow: 0 0 5px rgba(255, 255, 255, 0.486);
+					transition: 0.2s ease-in;
+				}
+
+				&:hover {
+					scale: .9;
+				}
+			}
+
+			.filterbutton {
+				width: 100%;
+
+				button {
+
+					width: 70%;
+					height: max-content;
+					padding: 5px;
+					border-radius: 10px;
+					background-color: #c0da63d8;
+					border: solid 2px #556420;
+					font-size: 22px;
+					font-family: $font1;
+					color: #556420;
+					text-shadow: 0 0px 2px rgba(0, 0, 0, 0.308);
+					box-shadow: 0 0 5px #131313;
+
+					&:hover {
+						scale: .9;
+						background-color: #d9f089d8;
+					}
+				}
+			}
+
+		}
+
+		.filters {
+			display: none;
+		}
+
+		.main-capsule {
+			margin-left: 0;
+			padding: 0 20px;
+			width: auto;
+			gap: 20px;
+
+			.capsule-cards {
+				width: 45%;
+			}
+		}
+	}
+
+	.home {
+		#gender-section {
+			height: 100%;
+
+			.gender {
+				width: 100%;
+				height: 70vh;
+			}
+		}
+
+		h2 {
+			font-size: 40px;
+			margin-top: 70px;
+		}
+
+		.home-section {
+			.carruselhome {
+				.homecards {
+					width: 50vw;
+
+					button {
+						font-size: 30px;
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+	.logos {
+		background-size: cover;
+		background-position-x: right;
+		background-position-y: top;
+		justify-content: center;
+
+	}
+
+	.footmenu {
+		display: block;
+	}
+
+	.ch2 {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	.complete-look {
+		width: 80%;
+		height: 400px;
+		display: grid;
+		object-fit: contain;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 20px;
+
+		.card-complete-look {
+			object-fit: contain;
+			height: 100%;
+			width: auto;
+			transition: 0.4s ease;
+
+			&:hover {
+				scale: 0.9;
+			}
+
+			img {
+				width: 100%;
+				object-fit: cover;
+
+			}
+
+		}
+	}
+
+	#look1 {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	#look2 {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+
+	#look3 {
+		grid-column: 1/2;
+		grid-row: 2/4;
+	}
+
+	#look4 {
+		grid-column: 2/3;
+		grid-row: 2/4;
+	}
+
+	.product-main {
+		width: 90%;
+
+		.product1 {
+			padding: 20px 20px 0;
+			width: 100%;
+			text-align: center;
+
+			h1 {
+				font-size: 2em;
+				color: #888787;
+				text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.753);
+			}
+
+			h2 {
+				font-size: 1.5em;
+				color: #fdf9f9;
+				background-color: #a6aa96;
+				border-radius: 5px;
+				box-shadow: 0 0 5px #485715;
+			}
+
+			h3 {
+				font-size: 1.2em;
+			}
+		}
+
+		.link1 a {
+			width: 100px;
+
+			p {
+				display: none;
+
+				:hover p {
+					display: none;
+				}
+			}
+		}
+
+		.keepshopping i {
+			text-align: center;
+			left: 40px;
+		}
+
+		.checkcart i {
+			text-align: center;
+			right: 40px;
+		}
+
+	}
+
+	.up {
+		right: 1px;
+
+		img {
+			width: 50px;
+		}
+	}
+
+	
+
+	.sport {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-bottom: 50px;
+		height: auto;
+
+		ul {
+			font-size: 80%;
+			width: 70%;
+			height: 200px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			gap: 15px;
+			background-color: rgba(0, 0, 0, 0);
+			box-shadow: none;
+
+			li {
+				height: 80%;
+				width: 100%;
+				border-radius: 10px;
+				background-color: #f7f7f7;
+				box-shadow: $color1 0 0 10px;
+				// margin: 20px;
+			}
+		}
+	}
+
+	footer {
+		margin-top: 20px;
+
+		.menu-footer {
+			display: none;
+		}
+
+	}
+
+#woman {
+
+
+	
+	.colection {
+		width: 90%;
+		height: 500px;
+		
+	}
+	#yoga,
+	#running,
+	#trainning,
+	#life-style {
+		margin: 15px 0;
+		width: 100%;
+	}
+	#w5,
+		#w10,
+		#w15,
+		#w20 {
+		display: flex;
+		background-size: contain;
+	}
+}
+	.about-us {
+		h2 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 20px;
+		}
+
+		.job h4 {
+			font-size: 16px;
+		}
+
+		section {
+			padding: 15px;
+		}
+	}
+
+	.capsule-collection {
+		background-size: contain;
+	}
+
+	.capsule {
+		flex-wrap: wrap;
+
+		.filtermenu {
+			margin: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+
+			.dropdown {
+				height: 100%;
+				padding: 0;
+				width: auto;
+			}
+
+			button {
+				background-color: #11111100;
+
+				i {
+					font-size: 35px;
+					background-color: #31313100;
+					color: #ee0909;
+					text-shadow: 0 0 5px rgba(255, 255, 255, 0.486);
+					transition: 0.2s ease-in;
+				}
+
+				&:hover {
+					scale: .9;
+				}
+			}
+
+			.filterbutton {
+				width: 100%;
+
+				button {
+
+					width: 70%;
+					height: max-content;
+					padding: 5px;
+					border-radius: 10px;
+					background-color: #c0da63d8;
+					border: solid 2px #556420;
+					font-size: 22px;
+					font-family: $font1;
+					color: #556420;
+					text-shadow: 0 0px 2px rgba(0, 0, 0, 0.308);
+					box-shadow: 0 0 5px #131313;
+
+					&:hover {
+						scale: .9;
+						background-color: #d9f089d8;
+					}
+				}
+			}
+		}
+
+		.filters {
+			display: none;
+		}
+
+		.main-capsule {
+			margin-left: 0;
+			padding: 0 20px;
+			width: auto;
+			gap: 20px;
+
+			.capsule-cards {
+				width: 45%;
+			}
+		}
+
+		
+	}
+	.home {
+		#gender-section {
+			height: 100%;
+
+			.gender {
+				width: 100%;
+				height: 90vh;
+				background-size: cover;
+				display: flex;
+				justify-content: center;
+				align-items: end;
+				filter: grayscale(100%);
+				&:first-child {
+					background-image: url(../extras/index/nike2.2.jpg);
+				}
+				&:nth-child(2){
+					background-image: url(../extras/index/nike1.2.jpg);
+				}
+				&:nth-child(3){
+					background-image: url(../extras/index/nike4.2.jpg);
+				}
+				&:nth-child(4){
+					background-image: url(../extras/index/nike3.2.jpg);
+				}
+			}
+		}
+	}
+}
+
+
+
+
+@media only screen and (max-width:440px) {
+	header {
+		margin-bottom: 50px;
+	}
+
+	nav .dropdown button i {
+		font-size: 2em;
+	}
+
+	.up {
+		img {
+			width: 40px;
+		}
+	}
+
+	.promotion {
+		h2 {
+			font-size: 18px;
+			padding: 15px;
+		}
+	}
+
+	.product-main {
+		width: 90%;
+
+		.carrusel {
+			width: 100%;
+			inset: 0;
+			margin: auto;
+			padding: 0;
+		}
+
+		.product1 {
+			padding: 20px 20px 0;
+			width: 100%;
+			text-align: center;
+
+			h1 {
+				font-size: 1.5em;
+				color: #888787;
+				text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.685);
+			}
+
+			h2 {
+				font-size: 1.2em;
+				color: #fdf9f9;
+				background-color: #a6aa96;
+				border-radius: 5px;
+				box-shadow: 0 0 5px #485715;
+			}
+
+			h3 {
+				margin-top: 20px;
+				font-size: 1em;
+			}
+		}
+	}
+
+	.about-us {
+		inset: 0;
+		margin: auto;
+		width: 100%;
+		padding: 10px;
+
+		section {
+			margin: 50px 0;
+		}
+
+		.up {
+			display: none;
+		}
+
+		#tracking {
+			.form-floating {
+				display: inline-block;
+				width: max-content;
+				margin-bottom: 100px;
+				position: relative;
+
+				button {
+					position: absolute;
+					left: 50px;
+					margin-bottom: 30px;
+					width: 100px;
+					height: 30px;
+					font-size: 12px;
+				}
+
+				.form-control {
+					width: 100%;
+					height: 40px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+
+		#contact-us {
+			display: inline-block;
+		}
+	}
+
+	.filtermenu button {
+		i {
+			font-size: 24px !important;
+		}
+	}
+
+	.main-capsule {
+		.capsule-cards {
+			width: 250px !important;
+		}
+	}
+
+	.home {
+		h2 {
+			font-size: 35px;
+			margin-top: 60px;
+			margin-bottom: 20px;
+		}
+
+		.home-section {
+
+			.carruselhome {
+				margin-top: 20px;
+
+				.homecards {
+					box-sizing: border-box;
+					margin: 20vw 10vw;
+					justify-self: center;
+					width: 80vw;
+
+					button {
+						font-size: 25px;
+					}
+				}
+			}
+		}
+	}
+}
