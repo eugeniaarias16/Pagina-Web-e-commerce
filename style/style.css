@@ -56,6 +56,7 @@ body::-webkit-scrollbar-thumb:hover {
 .promotion h2 {
   font-size: 36px;
   text-align: center;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 
 .logos {
@@ -310,7 +311,8 @@ footer {
 }
 .home h2 {
   font-size: 65px;
-  color: wheat;
+  color: rgba(219, 219, 219, 0.937254902);
+  text-shadow: 3px 0 5px #d0f44c;
   font-family: "Bebas Neue", sans-serif;
   margin: 50px 0;
   margin-top: 30px;
@@ -415,10 +417,24 @@ footer {
   object-fit: contain;
   justify-content: center;
   overflow: hidden;
+  transition: 0.3s ease-in;
+}
+.home .home-section .carruselhome .homecards:hover {
+  scale: 0.9;
+}
+.home .home-section .carruselhome .homecards:hover button {
+  color: #d0f44c;
+  width: 50%;
+  border-radius: 20px;
+  border: solid 3px rgba(219, 219, 219, 0.937254902);
+  box-shadow: 0 0 10px #313131;
+  background-color: #111111;
+  text-shadow: 0 0 5px rgba(255, 252, 252, 0.452);
 }
 .home .home-section .carruselhome .homecards img {
   width: 90%;
   max-height: 90%;
+  box-shadow: 0 0 25px rgba(247, 247, 247, 0.3725490196);
 }
 .home .home-section .carruselhome .homecards button {
   height: max-content;
@@ -744,7 +760,7 @@ footer {
 .capsule .filters h5, .capsule #collapse-filter h5 {
   width: 100%;
   text-align: center;
-  font-family: "Cairo", sans-serif;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
   font-size: 36px;
   font-weight: 400;
   margin-top: 20px;
@@ -757,7 +773,7 @@ footer {
 }
 .capsule .filters label, .capsule #collapse-filter label {
   font-size: 28px;
-  font-family: "Cairo", sans-serif;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
   font-weight: 400;
 }
 .capsule .filters .dropdown-menu, .capsule #collapse-filter .dropdown-menu {
@@ -803,7 +819,7 @@ footer {
 .capsule .filters #colors .form-check label, .capsule #collapse-filter #colors .form-check label {
   width: 100%;
   font-size: 20px;
-  font-family: "Cairo", sans-serif;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 .capsule .filters #colors .form-check .form-check-input, .capsule #collapse-filter #colors .form-check .form-check-input {
   float: right;
@@ -837,7 +853,7 @@ footer {
   min-width: 45%;
   padding: 5px;
   font-size: 20px;
-  font-family: "Cairo", sans-serif;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
   background-color: #d0f44c;
   height: 50px;
   border-radius: 10px;
@@ -903,7 +919,7 @@ footer {
 }
 .capsule .main-capsule .capsule-cards h4 {
   font-size: 28px;
-  font-family: "Cairo", sans-serif;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -946,13 +962,13 @@ footer {
   margin: auto;
   margin-top: 100px;
   margin-bottom: 100px;
-  height: 100%;
+  height: max-content;
   width: 80%;
   background-color: #f7f7f7;
   box-shadow: rgba(20, 20, 20, 0.2823529412) 0 0 10px;
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 600px auto 300px;
+  grid-template-rows: 600px auto 200px 200px;
   justify-items: center;
   /* align-items: center; */
 }
@@ -1003,7 +1019,7 @@ footer {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 250px 500px 100px;
+  grid-template-rows: 250px 500px 200px;
   row-gap: 10px;
 }
 
@@ -1064,9 +1080,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 .b1 #add-button {
-  width: 150px;
+  width: 250px;
   height: 50px;
   border-radius: 20px;
   justify-self: center;
@@ -1091,6 +1108,7 @@ footer {
 
 .product h1,
 .product1 h1 {
+  font-family: "Bebas Neue", sans-serif;
   font-size: 3em;
   color: #888787;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.753);
@@ -1098,10 +1116,12 @@ footer {
 .product h2,
 .product1 h2 {
   font-size: 2em;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 .product h3,
 .product1 h3 {
   font-size: 2em;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 
 .contain {
@@ -1161,13 +1181,15 @@ footer {
   margin-bottom: 30px;
   color: #ffffff;
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.884);
-  font-size: 2em;
+  font-size: 3em;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .ch3 {
   text-align: center;
   color: #313131;
   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.884);
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 
 .contain {
@@ -1199,6 +1221,7 @@ footer {
   align-self: flex-end;
   height: 90px;
   grid-column: 1/-1;
+  grid-row: 4/5;
   display: flex;
   justify-content: space-between;
   margin: 50px;
@@ -1241,6 +1264,7 @@ footer {
   grid-template-rows: 100px 1fr;
 }
 .client-main h1 {
+  font-family: "Bebas Neue", sans-serif;
   width: 100%;
   grid-column: 1/-1;
   text-align: center;
@@ -1249,6 +1273,7 @@ footer {
   text-align: center;
   margin-bottom: 20px;
   color: #313131;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 .client-main form {
   margin: 10px;
@@ -1260,6 +1285,7 @@ footer {
 legend,
 i {
   font-size: 24px;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 
 i {
@@ -1300,6 +1326,7 @@ i {
 }
 .total h3 {
   font-size: 30px;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 
 /*style ABOUT-US.HTML*/
@@ -1324,6 +1351,7 @@ i {
   width: 100%;
 }
 .about-us h2 {
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
   text-align: center;
   margin: 10px;
   font-size: 50px;
@@ -1333,6 +1361,7 @@ i {
   text-align: center;
   margin: 20px 0;
   font-size: 28px;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 .about-us h4 {
   font-size: 20px;
@@ -1414,6 +1443,7 @@ i {
 
 .find-store h2 {
   margin-bottom: 50px;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 .find-store iframe {
   height: 300px;
@@ -1427,6 +1457,7 @@ i {
 }
 #contact-us h2 {
   grid-column: 1/-1;
+  font-family: "Sawarabi Gothic", Helvetica, sans-serif;
 }
 
 .cus {
@@ -1632,7 +1663,7 @@ i:hover {
   }
   .capsule .filters label {
     font-size: 22px;
-    font-family: "Cairo", sans-serif;
+    font-family: "Sawarabi Gothic", Helvetica, sans-serif;
     font-weight: 400;
   }
   .capsule #price-range .field span {
@@ -1721,7 +1752,7 @@ i:hover {
   }
   .capsule .filters label {
     font-size: 22px;
-    font-family: "Cairo", sans-serif;
+    font-family: "Sawarabi Gothic", Helvetica, sans-serif;
     font-weight: 400;
   }
   .capsule #colors .form-check-input {
@@ -1734,6 +1765,13 @@ i:hover {
   .capsule #price-range .field span {
     font-size: 18px;
     width: 70%;
+  }
+  .product-main .product-description .choose-product {
+    position: relative;
+  }
+  .product-main .product-description .choose-product #list-sizes {
+    position: absolute;
+    bottom: 5px;
   }
   .product-main .product-description .choose-product .choose-color {
     height: 80px;
@@ -1794,7 +1832,7 @@ i:hover {
     font-size: 18px;
   }
   #tabladetalle .product-description {
-    grid-template-rows: 250px 500px 100px;
+    grid-template-rows: 250px 700px 100px;
   }
   #tabladetalle .product-description .choose-product {
     height: 100%;
@@ -1802,6 +1840,9 @@ i:hover {
   }
   #tabladetalle .product-description .choose-product h4 {
     font-size: 20px;
+  }
+  #tabladetalle .product-description .choose-product #list-sizes {
+    bottom: 0px;
   }
   #tabladetalle .product-description .choose-product .choose-color {
     display: flex;
@@ -1825,6 +1866,9 @@ i:hover {
   }
   #tabladetalle .product-description .product h3 {
     font-size: 24px;
+  }
+  .b1 #add-button {
+    width: 200px;
   }
   .about-us {
     padding: 30px;
@@ -1890,7 +1934,7 @@ i:hover {
   }
   .capsule .filters label {
     font-size: 22px;
-    font-family: "Cairo", sans-serif;
+    font-family: "Sawarabi Gothic", Helvetica, sans-serif;
     font-weight: 400;
   }
   .capsule #size {

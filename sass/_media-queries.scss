@@ -313,6 +313,11 @@
 	.product-main {
 		.product-description {
 			.choose-product {
+				position: relative;
+				#list-sizes {
+					position: absolute;
+					bottom: 5px;
+				}
 				.choose-color {
 					height: 80px;
 					}
@@ -386,12 +391,15 @@
 	}
 	#tabladetalle
 	.product-description {
-		grid-template-rows: 250px 500px 100px;
+		grid-template-rows: 250px 700px 100px;
 		.choose-product {
 			height: 100%;
 			width: 90%;
 			h4 {
 				font-size: 20px;
+			}
+			#list-sizes {
+				bottom: 0px;
 			}
 			.choose-color {
 				display: flex;
@@ -404,6 +412,7 @@
 					height: 50%;
 				}
 			}
+			
 		}
 
 		.product {
@@ -421,6 +430,9 @@
 				font-size: 24px;
 			}
 		}
+	}
+	.b1 #add-button {
+		width: 200px;
 	}
 
 	.about-us {
