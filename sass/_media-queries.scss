@@ -942,6 +942,9 @@
 
 	}
 	.about-us {
+		#search h1 {
+			font-size: 50px;
+		}
 		#contact-us {
 			padding: 30px;
 			grid-template-rows: 100px 250px 400px;
@@ -1263,7 +1266,7 @@
 		}
 
 		h2 {
-			font-size: 40px;
+			font-size: 55px;
 			margin-top: 70px;
 		}
 
@@ -1536,6 +1539,7 @@
 
 	}
 	.home {
+		
 		#gender-section {
 			height: 100%;
 
@@ -1551,7 +1555,7 @@
 					background-image: url(../extras/index/nike2.2.jpg);
 				}
 				&:nth-child(2){
-					background-image: url(../extras/index/nike1.2.jpg);
+					background-image: url(../extras/index/nike1.2.webp);
 				}
 				&:nth-child(3){
 					background-image: url(../extras/index/nike4.2.jpg);
@@ -1576,7 +1580,13 @@
 	header {
 		margin-bottom: 50px;
 	}
-
+	.logos {
+		align-items: end;
+		#nike-header {
+			
+			height: 50%;
+		}
+	}
 	nav .dropdown button i {
 		font-size: 2em;
 	}
@@ -1638,7 +1648,7 @@
 			text-align: center;
 
 			h1 {
-				font-size: 1.5em;
+				font-size: 2em;
 				color: #888787;
 				text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.685);
 			}
@@ -1663,7 +1673,9 @@
 		margin: auto;
 		width: 100%;
 		padding: 10px;
-
+		#search h1 {
+			font-size: 40px;
+		}
 		section {
 			margin: 50px 0;
 		}
@@ -1722,11 +1734,18 @@
 
 	.home {
 		h2 {
-			font-size: 35px;
+			font-size: 45px;
 			margin-top: 60px;
 			margin-bottom: 20px;
 		}
-
+		#gender-section {
+			width: 100%;
+			height: auto;
+			.gender:nth-child(2){
+				background-image: url(../extras/index/nike1.2.webp);
+			}
+		}
+		
 		.home-section {
 
 			.carruselhome {

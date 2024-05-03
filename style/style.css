@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+a {
+  color: #111111;
+}
+
 * {
   margin: 0;
   border: 0;
@@ -571,6 +575,7 @@ footer {
   grid-row: 4/6;
 }
 #woman #w5 {
+  background-color: #f6f6f6;
   background-image: url(../extras/woman/yoga5.png);
   grid-column: 5/7;
   grid-row: 4/6;
@@ -596,6 +601,7 @@ footer {
   grid-row: 9/11;
 }
 #woman #w10 {
+  background-color: #f6f6f6;
   background-image: url(../extras/woman/running5.webp);
   grid-column: 5/7;
   grid-row: 9/11;
@@ -621,6 +627,7 @@ footer {
   grid-row: 14/16;
 }
 #woman #w15 {
+  background-color: #f6f6f6;
   background-image: url(../extras/woman/trainning5webp.webp);
   grid-column: 5/7;
   grid-row: 14/16;
@@ -646,6 +653,7 @@ footer {
   grid-row: 19/21;
 }
 #woman #w20 {
+  background-color: #f6f6f6;
   background-image: url(../extras/woman/life5.webp);
   grid-column: 5/7;
   grid-row: 19/21;
@@ -1338,6 +1346,28 @@ i {
   width: 90%;
   background-color: rgba(245, 245, 245, 0);
   padding: 50px;
+}
+.about-us #search {
+  margin-top: 10px;
+  padding-top: 30px;
+  background-color: rgba(17, 17, 17, 0);
+  box-shadow: none;
+  text-align: center;
+}
+.about-us #search h1 {
+  color: #d0f44c;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+  text-shadow: 2px 0 5px rgba(219, 219, 219, 0.937254902);
+}
+.about-us #search label {
+  background-color: #d0f44c;
+  border: #d0f44c solid 2px;
+}
+.about-us #search #inputGroupSelect01 {
+  border-radius: 5px;
+  border: #d0f44c solid 2px;
+  font-family: rgba(247, 247, 247, 0.3725490196);
 }
 .about-us section {
   margin: 100px 0;
@@ -2241,6 +2271,9 @@ i:hover {
   .home .home-section .carruselhome .homecards button {
     font-size: 30px;
   }
+  .about-us #search h1 {
+    font-size: 50px;
+  }
   .about-us #contact-us {
     padding: 30px;
     grid-template-rows: 100px 250px 400px;
@@ -2485,7 +2518,7 @@ i:hover {
     height: 70vh;
   }
   .home h2 {
-    font-size: 40px;
+    font-size: 55px;
     margin-top: 70px;
   }
   .home .home-section .carruselhome .homecards {
@@ -2708,7 +2741,7 @@ i:hover {
     background-image: url(../extras/index/nike2.2.jpg);
   }
   .home #gender-section .gender:nth-child(2) {
-    background-image: url(../extras/index/nike1.2.jpg);
+    background-image: url(../extras/index/nike1.2.webp);
   }
   .home #gender-section .gender:nth-child(3) {
     background-image: url(../extras/index/nike4.2.jpg);
@@ -2725,6 +2758,12 @@ i:hover {
 @media only screen and (max-width: 440px) {
   header {
     margin-bottom: 50px;
+  }
+  .logos {
+    align-items: end;
+  }
+  .logos #nike-header {
+    height: 50%;
   }
   nav .dropdown button i {
     font-size: 2em;
@@ -2780,7 +2819,7 @@ i:hover {
     text-align: center;
   }
   .product-main .product1 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #888787;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.685);
   }
@@ -2800,6 +2839,9 @@ i:hover {
     margin: auto;
     width: 100%;
     padding: 10px;
+  }
+  .about-us #search h1 {
+    font-size: 40px;
   }
   .about-us section {
     margin: 50px 0;
@@ -2843,9 +2885,16 @@ i:hover {
     width: 250px !important;
   }
   .home h2 {
-    font-size: 35px;
+    font-size: 45px;
     margin-top: 60px;
     margin-bottom: 20px;
+  }
+  .home #gender-section {
+    width: 100%;
+    height: auto;
+  }
+  .home #gender-section .gender:nth-child(2) {
+    background-image: url(../extras/index/nike1.2.webp);
   }
   .home .home-section .carruselhome {
     margin-top: 20px;
